@@ -9,7 +9,23 @@
     <body>
         <ul id='navul'>
             <li onclick="redirect('index.html')" class="navitem " id="homebtn"><p>⌂</p></li>
-            <li onclick="redirect('partijen.html')" class="navitem navselected"><p>partijen</p></li>
+            <li onclick="redirect('partijen.html')" class="navitem hoverdiv navselected">
+                <p>partijen</p>
+                <div class="hoverbox"> 
+
+                    <div class="hoverbox-content">
+                        <p>PVV</p>
+                    </div>
+
+                    <div class="hoverbox-content">
+                        <p>PvdA</p>
+                    </div>
+
+                    <div class="hoverbox-content">
+                        <p>GL</p>
+                    </div>
+                </div>
+            </li>            
             <li onclick="redirect('verkiezingen.html')" class="navitem"><p>verkiezingen</p></li>
             <li onclick="redirect('themas.html')" class="navitem"><p>thema's</p></li>
         </ul>
