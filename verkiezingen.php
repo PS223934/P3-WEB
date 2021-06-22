@@ -39,6 +39,7 @@
 
         <div id="content">
             <div id="contentcontainer">
+            <h1>Aankomende verkiezingen:</h1>
 
             </div>
         </div>
