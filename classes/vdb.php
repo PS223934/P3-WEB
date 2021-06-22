@@ -5,7 +5,7 @@
         const USER = "root";
         const PASSWD = "";
 
-        function GetPartijen(){		
+        function GetPartijen() {	
             $pdo = new PDO(self::DSN, self::USER, self::PASSWD);
 
             $statement = $pdo->prepare("SELECT * FROM partij;");  
@@ -16,5 +16,17 @@
             
             return $rows;
         }
+
+        function GetPartijDetails($id) {
+            $pdo = new PDO(self::DSN, self::USER, self::PASSWD);
+
+            $statement = $pdo->prepare("SELECT * FROM partij WHERE PartijId = $id;");  
+            
+            $statement->execute(); 
+            
+            $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
+            
+            return $rows;
+        }
     }
-?>
+?>  
